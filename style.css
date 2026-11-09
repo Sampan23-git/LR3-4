@@ -1,0 +1,60 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-nav .nav-link {
+  color: var(--bs-dark) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--bs-primary) !important;
+  font-weight: 500;
+}
+
+.hero-image {
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.hero-image:hover {
+  transform: translateY(-6px) rotate(-0.6deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.icon-link {
+  transition: transform 0.18s ease;
+}
+
+.icon-link:hover {
+  transform: translateX(6px);
+}
+
+.faq-item .bi-chevron-right {
+  transition: transform 0.25s ease;
+}
+
+.faq-item .collapsed .bi-chevron-right {
+  transform: rotate(0);
+}
+
+.faq-item .bi-chevron-right.rotate {
+  transform: rotate(90deg);
+}
+
+a.text-secondary:hover {
+  color: var(--bs-primary) !important;
+}
+
+.rounded-4 {
+  border-radius: 1rem !important;
+}
+
+.link-offset-3-hover:hover {
+  text-underline-offset: 3px;
+}
+
+@media (min-width: 992px) {
+  #heroSection {
+    min-height: 100vh;
+  }
+}
